@@ -98,6 +98,7 @@
 .meetup__desc {
 
   float: left;
+  user-select: none;
 
   @media #{$wide} {
     padding-top: 83px;

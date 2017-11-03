@@ -99,6 +99,7 @@
 .listen__desc {
 
   float: left;
+  user-select: none;
 
   @media #{$wide} {
     max-width: 450px;
