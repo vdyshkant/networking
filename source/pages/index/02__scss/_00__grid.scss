@@ -1,0 +1,28 @@
+
+
+body.page-index {
+
+  background: url("images/bg.jpg");
+  background-position: center top;
+
+  @media #{$tablet} {
+    background: url("images/bg--tablet.jpg");
+    background-position: center top;
+  }
+
+  & .wrapper {
+    min-width: 720px;
+    max-width: 1920px;
+
+    overflow: hidden;  
+
+
+    @media #{$wide} {
+      width: auto;
+    }
+  }
+}
+
+.page-index .wrapper {
+
+}

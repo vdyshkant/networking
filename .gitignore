@@ -1,0 +1,11 @@
+/node_modules
+/vendor/
+/build
+/logs/*
+/public/img/button/*
+*.local.php
+/.idea
+public/images/upload/*
+composer.lock
+
+!.gitkeep

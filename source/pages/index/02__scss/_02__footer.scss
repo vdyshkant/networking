@@ -1,0 +1,57 @@
+
+
+.footer {
+
+  & .shell {
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
+
+    margin: 0 auto;
+
+    @media #{$wide} {
+      max-width: 1215px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media #{$tablet} {
+      max-width: 680px;
+    }
+  }
+
+  & .container {
+    padding-bottom: 30px;
+
+    @media #{$wide} {
+      padding-top: 70px;
+    }
+  }
+
+
+}
+
+
+.footer {
+
+  &__text {
+    @include font(400, normal, 24px, 29px, $dinreg);
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 790px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media #{$tablet} {
+      @include font(400, normal, 20px, 24px, $dinreg);
+    }
+  }
+
+  &__slogan {
+    @include font(700, normal, 24px, 29px, $myrbold);
+    text-transform: uppercase;
+    color: #ffde01;
+    text-align: center;
+  }
+
+}

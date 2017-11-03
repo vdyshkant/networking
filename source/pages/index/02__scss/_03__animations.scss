@@ -1,0 +1,163 @@
+
+@media #{$wide} {
+
+  .js-title {
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s .0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    &.loaded {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+
+
+  .js-text {
+
+    opacity: 0;
+    transform: translate(-50px);
+    transition: all 1s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    &.loaded {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+
+  .presentation .js-text,
+  .connect .js-text {
+
+    opacity: 0;
+    transform: translate(50px);
+    transition: all 1s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    &.loaded {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+}
+
+@media #{$wide} {
+
+
+  .meetup.js-section .stage {
+    &::before {
+      right: 4000px;
+      transition: all 1s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    &.loaded::before {
+      right: 346px;
+    }
+  }
+
+  .presentation.js-section .stage {
+    &::before {
+      left: 4000px;
+      transition: all 1s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    &.loaded::before {
+      left: 352px;
+    }
+  }
+
+  .listen.js-section .stage {
+    &::before {
+      right: 4000px;
+      transition: all 1s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    &.loaded::before {
+      right: 346px;
+    }
+  }
+
+  .connect.js-section .stage  {
+    &::before {
+      left: 4000px;
+      transition: all 1s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    &.loaded::before {
+      left: 352px;
+    }
+  }
+
+  .offline.js-section .stage {
+    &::before {
+      left: -4000px;
+      transition: all 1s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    &.loaded::before {
+      left: 352px;
+    }
+  }
+
+}
+
+// yellow arrows:
+
+@media #{$wide} {
+
+  .js-section .container {
+    &::before,
+    &::after {
+      width: 0;
+      transition: .6s ease;
+      transition-delay: 0.7s;
+    }
+
+    &.loaded {
+      &::before {
+        width: 100%;
+      }
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+// header title animate:
+
+@media #{$wide} {
+
+  .header__title {
+
+    & span {
+      opacity: 0;
+
+      &:first-child {
+        transform: translate(-2000px);
+        transition: transform .4s 0.1s ease-out;
+      }
+
+      &:last-child {
+        transform: translate(2000px);
+        transition: transform .4s 0.1s ease-out;
+      }
+    }
+
+    &.loaded {
+      & span {
+        opacity: 1;
+
+        &:first-child {
+          transform: translate(0);
+        }
+
+        &:last-child {
+          transform: translate(0);
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,120 @@
+
+
+.header {
+
+  & .shell {
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
+
+    margin: 0 auto;
+
+    @media #{$wide} {
+      max-width: 1215px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media #{$tablet} {
+      max-width: 680px;
+    }
+  }
+
+  & .container {
+    padding: 70px 0 70px 0;
+    position: relative;
+
+    @media #{$tablet} {
+      padding-bottom: 45px;
+      padding-top: 50px;
+    }
+  }
+
+  & .stage {
+
+    @media #{$tablet} {
+      position: relative;
+      padding-bottom: 30px;
+    }
+
+    &::before,
+    &::after {
+      // ANIMATE IT
+      content: '';
+      position: absolute;
+      bottom: 0;
+    }
+    &::before {
+      // width: 1175px;
+      width: 100%;
+      height: 1px;
+      background-color: #ffff00;
+      bottom: 16px;
+      left: 0;
+
+      @media #{$tablet} {
+        bottom: 5px;
+      }
+    }
+    &::after {
+      width: 790px;
+      height: 1px;
+      background-color: #ffff00;
+      bottom: 11px;
+      right: 64px;
+
+      @media #{$tablet} {
+        bottom: 0px;
+        width: 460px;
+        right: 33px;
+      }
+    }
+  }
+}
+
+
+.header {
+
+  &__title {
+    margin-bottom: 50px;
+
+    & span {
+
+      &:first-child {
+        @include font(400, normal, 58px, 90px, $dinreg);
+        color: #ffffff;
+        display: block;
+        text-transform: uppercase;
+
+        @media #{$wide} {
+          padding-left: 9.361702127659574%; /* 110 / 1175 */
+        }
+
+        @media #{$tablet} {
+          @include font(400, normal, 45px, 70px, $dinreg);
+        }
+      }
+
+      &:last-child {
+        @include font(700, normal, 120px, 90px, $dinbold);
+        color: #ffde01;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: -27px;
+
+        @media #{$tablet} {
+          @include font(700, normal, 93px, 70px, $dinbold);
+          margin-top: -20px;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    @include font(400, normal, 24px, 29px, $dinreg);
+    color: #ffffff;
+    max-width: 660px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
