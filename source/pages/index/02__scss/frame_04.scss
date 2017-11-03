@@ -64,7 +64,7 @@
     display: flow-root;
     position: relative;
 
-    &::before {
+    & .arrow {
       content: '';
       position: absolute;
       top: 0;

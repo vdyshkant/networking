@@ -76,7 +76,7 @@
     }
   }
 
-  .connect.js-section .stage  {
+  .connect.js-section .stage {
     &::before {
       left: 4000px;
       transition: all 1s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
@@ -89,12 +89,12 @@
 
   .offline.js-section .stage {
     &::before {
-      left: -4000px;
+      right: 4000px;
       transition: all 1s 0s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     }
 
     &.loaded::before {
-      left: 352px;
+      right: 346px;
     }
   }
 
